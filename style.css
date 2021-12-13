@@ -1,0 +1,150 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    font-family: "Kumbh Sans";
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-menu {
+
+    display: none;
+}
+
+.sneakers {
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    text-align: center;
+    border-bottom: 2px solid #858b94;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    font-weight: 400;
+    font-size: 16px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-collections, .modal-men, .modal-women, .modal-about, .modal-contact, .modal-icon-close {
+
+    margin: 15px;
+}
+
+.collections, .men, .women, .about, .contact, 
+.modal-collections, .modal-men, .modal-women, .modal-about, .modal-contact, .modal-icon-close{
+    color: #858b94;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-icon-close:hover {
+
+    cursor: pointer;
+}
+
+.collections:hover, .men:hover, .women:hover, .about:hover, .contact:hover,
+.modal-collections:hover, .modal-men:hover, .modal-women:hover, .modal-about:hover, .modal-contact:hover{
+    border-bottom: 2px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.sneakers {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.icon-pic {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-cart, .avatar {
+
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    background-color: hsl(26, 100%, 55%); 
+}
+
+#image-avatar:hover {
+
+    cursor: pointer;
+    margin: 2px;
+}
+
+#cart-icon {
+
+    cursor: pointer;
+}
+
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    visibility: hidden;
+  }
+
+  .modal {
+    position: relative;
+    background-color: white;
+    width: 25%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .menu {
+      display: none;
+    }
+
+    .icon-menu {
+
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar {
+
+        border-bottom: none;
+    }
+
+    .icon-pic {
+
+        width: 45%;
+    }
+  }
+
+
