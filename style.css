@@ -110,6 +110,16 @@ body {
     border-bottom: 2px solid #858b94;
 }
 
+.cart-content {
+
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .avatar {
     border-radius: 50%;
     background-color: hsl(26, 100%, 55%); 
