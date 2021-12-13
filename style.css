@@ -86,6 +86,30 @@ body {
     align-items: center;
 }
 
+.cart {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    visibility: hidden;
+    right: 20px;
+}
+
+.cart-header {
+    font-size: 16px;
+    font-weight: 400;
+    height: 15%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid #858b94;
+}
+
 .avatar {
     border-radius: 50%;
     background-color: hsl(26, 100%, 55%); 
@@ -144,6 +168,13 @@ body {
     .icon-pic {
 
         width: 45%;
+    }
+
+    .cart {
+        width: 90%;
+        margin-right: 5px;
+        margin-left: 5px;
+        right: 0px;
     }
   }
 
