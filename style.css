@@ -357,6 +357,7 @@ body {
 	.main-content {
 		width: 500px;
 		margin: 0 auto;
+        z-index: -1;
 	}
 }
 
