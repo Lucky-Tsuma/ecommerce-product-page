@@ -1,3 +1,20 @@
+:root {
+	--primary-orange: hsl(26, 100%, 55%);
+	--pale-orange: hsl(25, 100%, 94%);
+	--very-dark-blue: hsl(220, 13%, 13%);
+	--dark-grayish-blue: hsl(219, 9%, 45%);
+	--grayish-blue: hsl(220, 14%, 75%);
+	--light-grayish-blue: hsl(223, 64%, 98%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Kumbh Sans", sans-serif;
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
@@ -10,24 +27,6 @@
 body {
 	font-family: "Kumbh Sans";
 }
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-:root {
-	--primary-orange: hsl(26, 100%, 55%);
-	--pale-orange: hsl(25, 100%, 94%);
-	--very-dark-blue: hsl(220, 13%, 13%);
-	--dark-grayish-blue: hsl(219, 9%, 45%);
-	--grayish-blue: hsl(220, 14%, 75%);
-	--light-grayish-blue: hsl(223, 64%, 98%);
-}
-
-body {
-	font-family: "Kumbh Sans", sans-serif;
-}
 .wrapper {
 	width: 100%;
 	min-width: 375px;
@@ -37,6 +36,7 @@ body {
 
 .main-content {
 	position: relative;
+	z-index: -1;
 }
 .slider {
 	position: relative;
@@ -399,7 +399,7 @@ body {
 	.main-content {
 		width: 500px;
 		margin: 0 auto;
-        z-index: -1;
+		z-index: -1;
 	}
 }
 
