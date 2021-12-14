@@ -13,73 +13,66 @@
 		<title>Frontend Mentor | ecommerce-product-page</title>
 	</head>
 	<body>
+		<div class="wrapper">
+			<div class="modal-bg">
+				<div class="modal">
+					<div class="modal-icon-close">
+						<img
+							onclick="hidemodal()"
+							src="./images/icon-close.svg"
+							alt="Close Icon"
+							id="close-icon"
+						/>
+					</div>
+					<div class="modal-collections">Collections</div>
+					<div class="modal-men">Men</div>
+					<div class="modal-women">Women</div>
+					<div class="modal-about">About</div>
+					<div class="modal-contact">Contact</div>
+				</div>
+			</div>
 
-
-
-		<div class="wrapper"><div class = "modal-bg">
-      <div class = "modal">
-        <div class = "modal-icon-close">
-          <img
-              onclick="hidemodal()"
-              src="./images/icon-close.svg"
-              alt="Close Icon"
-              id="close-icon"
-          />
-        </div>
-        <div class = "modal-collections">Collections</div>
-        <div class = "modal-men">Men</div>
-        <div class = "modal-women">Women</div>
-        <div class = "modal-about">About</div>
-        <div class = "modal-contact">Contact</div>
-    </div>
-  </div>
-  
-  <div class="nav">
-    <div class = "navbar">
-      <div class = "icon-menu">
-        <img 
-            onclick="showmodal()"
-            src="./images/icon-menu.svg"
-            alt="Menu Icon"
-            id="menu-icon"
-        />
-      </div>
-      <div class = "sneakers">Sneakers</div>
-      <div class = "menu">
-        <div class = "collections">Collections</div>
-        <div class = "men">Men</div>
-        <div class = "women">Women</div>
-        <div class = "about">About</div>
-        <div class = "contact">Contact</div>
-      </div>
-      <div class="icon-pic">
-        <div class="icon-cart">
-          <img 
-              onclick="togglecart()"
-              src="./images/icon-cart.svg"
-              alt="Cart icon"
-              id="cart-icon"
-            />
-        </div>
-        <div class="avatar">
-          <img 
-              src="./images/image-avatar.png"
-              alt="Image Avatar"
-              id="image-avatar"
-            />
-        </div>
-      </div>
-    </div>
-    <div class = "cart"> 
-    <div class = "cart-header">Cart</div>
-    <div class = "cart-content">Your cart is empty.</div>
-  </div>
-  </div>
-  
- 
-  
-
-
+			<div class="nav">
+				<div class="navbar">
+					<div class="icon-menu">
+						<img
+							onclick="showmodal()"
+							src="./images/icon-menu.svg"
+							alt="Menu Icon"
+							id="menu-icon"
+						/>
+					</div>
+					<div class="sneakers">Sneakers</div>
+					<div class="menu">
+						<div class="collections">Collections</div>
+						<div class="men">Men</div>
+						<div class="women">Women</div>
+						<div class="about">About</div>
+						<div class="contact">Contact</div>
+					</div>
+					<div class="icon-pic">
+						<div class="icon-cart">
+							<img
+								onclick="togglecart()"
+								src="./images/icon-cart.svg"
+								alt="Cart icon"
+								id="cart-icon"
+							/>
+						</div>
+						<div class="avatar">
+							<img
+								src="./images/image-avatar.png"
+								alt="Image Avatar"
+								id="image-avatar"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="cart">
+					<div class="cart-header">Cart</div>
+					<div class="cart-content">Your cart is empty.</div>
+				</div>
+			</div>
 			<section class="main-content">
 				<section class="product-view">
 					<div class="slider">
@@ -89,35 +82,12 @@
 								alt="product"
 								class="product-image current-slide"
 							/>
-							<img
-								src="./images/image-product-2.jpg"
-								alt="product"
-								class="product-image"
-							/>
-							<img
-								src="./images/image-product-3.jpg"
-								alt="product"
-								class="product-image"
-							/>
-							<img
-								src="./images/image-product-4.jpg"
-								alt="product"
-								class="product-image"
-							/>
 						</div>
 						<div class="icon-prev icon-prev-slider">
-							<img
-								src="./images/icon-previous.svg"
-								alt=""
-								onclick="slideBack()"
-							/>
+							<img src="./images/icon-previous.svg" alt="" />
 						</div>
 						<div class="icon-next icon-next-slider">
-							<img
-								src="./images/icon-next.svg"
-								alt=""
-								onclick="slideForward()"
-							/>
+							<img src="./images/icon-next.svg" alt="" />
 						</div>
 					</div>
 					<div class="thumbnail-navigator">
@@ -160,19 +130,9 @@
 					</div>
 					<div class="order-section">
 						<div class="quantity-selector">
-							<img
-								src="./images/icon-minus.svg"
-								alt=""
-								class="minus-icon"
-								onclick="deacreaseQuantity()"
-							/>
+							<img src="./images/icon-minus.svg" alt="" class="minus-icon" />
 							<span class="quantity">0</span>
-							<img
-								src="./images/icon-plus.svg"
-								alt=""
-								class="plus-icon"
-								onclick="increaseQuantity()"
-							/>
+							<img src="./images/icon-plus.svg" alt="" class="plus-icon" />
 						</div>
 						<button class="add-to-cart-btn" onclick="addToCart()">
 							<div class="btn-content">
